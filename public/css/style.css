@@ -67,8 +67,10 @@ p {
 /*portfolio*/
 .portfolio {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
     text-align: center;
+    display: flex;
+    flex-direction: column; /*so i can align title and portfolio*/
 }
 h2 {
     text-transform: uppercase;
@@ -78,4 +80,14 @@ h2 {
 .links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 25%;
+}
+.links > a {
+    flex: 33%;
+}
+.links > a > img {
+    height: 125px;
+    border-radius: 5px;
+    margin: 10px;
 }
