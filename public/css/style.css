@@ -58,7 +58,6 @@ h1 {
     padding: 10px;
 }
 p {
-    text-transform: capitalize;
     font-size: 13px;
     padding-bottom: 20px;
 }
@@ -111,7 +110,6 @@ h2 {
 }
 .text > p {
     text-align: left;
-    text-transform: none;
     font-size: 10px;
     font-weight: 500;
     line-height: 16px;
@@ -156,4 +154,50 @@ textarea {
     border-radius: 5px;
     width: 60px;
     height: 40px;
+}
+
+
+
+/*footer*/
+footer {
+    background-color: #2C3E50;
+    color: white;
+}
+.footer {
+    display: flex;
+    margin: 0 20%;
+    padding: 50px 0;
+}
+.footer > div {
+    width: 30%;
+    text-align: center;
+    padding: 0 20px;
+}
+.footer > div > h3 {
+    font-size: 13px;
+    padding: 0;
+}
+.footer > div > p {
+    text-align: center;
+    line-height: 15px;
+}
+.footer > div:last-of-type > p > a {
+    text-decoration: none;
+    color: rgb(3, 201, 169);
+}
+.footer > div > a > img {
+    height: 30px;
+    filter: invert(100%);
+    padding: 15px 2px;
+    
+}
+.footer > div > p {
+    font-size: 10px;
+    padding-top: 20px;
+}
+footer > p {
+    background-color: #1A252F;
+    text-align: center;
+    font-size: 7px;
+    padding-top: 20px;
 }
