@@ -75,7 +75,6 @@ p {
 h2 {
     text-transform: uppercase;
     font-weight: bold;
-    padding: 10px;
 }
 .links {
     display: flex;
@@ -87,7 +86,7 @@ h2 {
     flex: 33%;
 }
 .links > a > img {
-    height: 150px;
+    height: 140px;
     border-radius: 5px;
     margin: 10px 0px;
 }
@@ -154,6 +153,8 @@ textarea {
     border-radius: 5px;
     width: 60px;
     height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
