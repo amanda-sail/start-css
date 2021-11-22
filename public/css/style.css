@@ -15,6 +15,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 200px 20px 200px;
+    /*should put color and text transform here*/
 }
 h3 {
     color: white;
@@ -69,7 +70,7 @@ p {
     padding-top: 50px;
     padding-bottom: 50px; 
     text-align: center;
-    display: flex;
+    display: flex; /*not neccesary here!!!*/
     flex-direction: column; /*so i can align title and portfolio*/
 }
 h2 {
@@ -86,7 +87,7 @@ h2 {
     flex: 33%;
 }
 .links > a > img {
-    height: 140px;
+    height: 140px; /*NOTE!! should be width 100% bc that is the size of the flex and it would thus respect it*/
     border-radius: 5px;
     margin: 10px 0px;
 }
@@ -103,12 +104,12 @@ h2 {
 }
 .text {
     margin: 0 30%;
-    width: 40%;
+    width: 40%; /*not neccessary?*/
     display: flex;
-    justify-content: center;
+    justify-content: center; /*not neccessary?*/
 }
 .text > p {
-    text-align: left;
+    text-align: left; /*can also be start*/
     font-size: 10px;
     font-weight: 500;
     line-height: 16px;
@@ -130,7 +131,7 @@ form {
     text-align: left;
     margin: 0 30%;
 }
-label {
+label { /*if, instead of label, one uses placeholder then the font family mut be placed in the * at the top*/
     color: grey;
     font-size: 12px;
     padding-top: 20px;
@@ -170,7 +171,7 @@ footer {
     padding: 50px 0;
 }
 .footer > div {
-    width: 30%;
+    width: 30%; /*flex:1*/
     text-align: center;
     padding: 0 20px;
 }
@@ -179,7 +180,7 @@ footer {
     padding: 0;
 }
 .footer > div > p {
-    text-align: center;
+    text-align: center; /*not necessary?*/
     line-height: 15px;
 }
 .footer > div:last-of-type > p > a {
@@ -196,9 +197,9 @@ footer {
     font-size: 10px;
     padding-top: 20px;
 }
-footer > p {
+footer > p { /*need display:block if using span*/
     background-color: #1A252F;
     text-align: center;
     font-size: 7px;
-    padding-top: 20px;
+    padding-top: 20px; 
 }
