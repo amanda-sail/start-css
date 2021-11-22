@@ -70,8 +70,8 @@ p {
     padding-top: 50px;
     padding-bottom: 50px; 
     text-align: center;
-    display: flex; /*not neccesary here!!!*/
-    flex-direction: column; /*so i can align title and portfolio*/
+    /*display: flex; not neccesary here!!!
+    flex-direction: column; so i can align title and portfolio*/
 }
 h2 {
     text-transform: uppercase;
@@ -84,12 +84,14 @@ h2 {
     margin: 0 20%;
 }
 .links > a {
-    flex: 33%;
+    flex: 30%;
+    margin: 10px;
+    /*reduced flex form 33 to 30 and took off 0 for r/l margin*/
 }
 .links > a > img {
-    height: 140px; /*NOTE!! should be width 100% bc that is the size of the flex and it would thus respect it*/
+    /*height: 140px; NOTE!! should be width 100% bc that is the size of the flex and it would thus respect it*/
+    width: 100%;
     border-radius: 5px;
-    margin: 10px 0px;
 }
 
 
@@ -104,9 +106,9 @@ h2 {
 }
 .text {
     margin: 0 30%;
-    width: 40%; /*not neccessary?*/
+    /*width: 40%; not neccessary*/
     display: flex;
-    justify-content: center; /*not neccessary?*/
+    /*justify-content: center; not neccessary*/
 }
 .text > p {
     text-align: left; /*can also be start*/
@@ -171,7 +173,8 @@ footer {
     padding: 50px 0;
 }
 .footer > div {
-    width: 30%; /*flex:1*/
+    /* width: 30%; replaced with flex:1 */
+    flex:1;
     text-align: center;
     padding: 0 20px;
 }
@@ -202,4 +205,58 @@ footer > p { /*need display:block if using span*/
     text-align: center;
     font-size: 7px;
     padding-top: 20px; 
+}
+
+
+
+/* Media Query pour Telephone */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    .links {
+        margin: 5%;
+    }
+    .text {
+        flex-direction: column;
+    }
+    about > h3 {
+        padding-bottom: 20px;
+    }
+    .text > p {
+        font-size: 15px;
+    }
+    .text, form {
+        margin: 0 10%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer > div {
+        padding: 0 10px;
+    }
+    .footer > div > h3 {
+        font-size: 20px;
+    }
+    .footer > div > p {
+        font-size: 15px;
+    }
+}
+
+
+
+/* Media Query pour Tablette */
+@media screen and (min-width: 576px) and (max-width: 769px) {
+    header {
+        padding: 20px;
+    }
+    .links {
+        margin: 5%;
+    }
+    .text, form {
+        margin: 0 10%;
+    }
+    .footer {
+        margin: 0;
+    }
 }
